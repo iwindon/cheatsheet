@@ -8,7 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">Header</header>
+        <header class="header">
+            <div>
+                <h1 class="logo">GitHub</h1>
+            </div>
+            <div>
+                <h1 class="title">GIT CHEAT SHEET</h1>
+            </div>
+        </header>
         <nav class="sidebar">
             <h2>INSTALLATION & GUIS</h2>
             <p>With platform specific installers for Git, GitHub also provides the 
@@ -40,9 +47,41 @@
             <p class="command">git config --global color.ui auto</p>
         </div>
 
+        <h2>SETUP & INIT</h2>
+        <p>Configuring user information, initializing and cloning repositories</p>
+        <div>
+            <p class="command">git init</p>
+        </div>
+        <div>
+            <p class="command">git clone [url]</p>
+        </div>
+
         </nav>
-        <aside class="right-sidebar">Right Sidebar</aside>
-        <footer class="footer">Footer</footer>
+        <aside class="right-sidebar">
+            <h2>STAGE & SNAPSHOT</h2>
+            <p>Working with snapshots and the Git staging area</p>
+            <div>
+                <p class="command">git status</p>
+            </div>
+            <div>
+                <p class="command">git add [file]</p>
+            </div>
+            <div>
+                <p class="command">git reset [file]</p>
+            </div>
+            <div>
+                <p class="command">git diff</p>
+            </div>
+            <div>
+                <p class="command">git diff --staged</p>
+            </div>
+            <div>
+                <p class="command">git commit -m "[descriptive message]"</p>
+            </div>
+        </aside>
+        <footer class="footer">
+            <p>GitHub Cheat Sheet &copy; 2024</p>
+        </footer>
     </div>
 </body>
 </html>
