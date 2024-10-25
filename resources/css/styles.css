@@ -1,75 +1,58 @@
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic typography */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    padding: 20px;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 20px;
-    color: #444;
-}
-
-/* Links */
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar right-sidebar'
+        'footer footer';
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
 }
 
-/* Buttons */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #3498db;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.header {
+    grid-area: header;
+    background-color: #ffdd57;
+    padding: 1rem;
     text-align: center;
 }
 
-.button:hover {
-    background-color: #2980b9;
-}
-
-/* Forms */
-input, textarea {
+.sidebar {
+    grid-area: sidebar;
+    padding: 1rem;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-input[type="submit"] {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+.main-content {
+    grid-area: main-content;
+    background-color: #2ec4b6;
+    padding: 1rem;
 }
 
-input[type="submit"]:hover {
-    background-color: #2980b9;
+.right-sidebar {
+    grid-area: right-sidebar;
+    background-color: #e71d36;
+    padding: 1rem;
+}
+
+.command {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-family: monospace; /* Monospace font for command line text */
+    display: inline-block; /* Ensure each command is on its own line */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    margin-bottom: 10px; /* Space between each command */
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #011627;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }

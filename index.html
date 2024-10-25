@@ -1,86 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <link rel="stylesheet" href="./resources/css/styles.css">
 </head>
 <body>
-    <h1>css Cheatsheet</h1>
-    <p>Welcome to the CSS Cheatsheet</p>
+    <div class="container">
+        <header class="header">Header</header>
+        <nav class="sidebar">
+            <h2>INSTALLATION & GUIS</h2>
+            <p>With platform specific installers for Git, GitHub also provides the 
+            ease of staying up-to-date with the latest releases of the command 
+            line tool while providing a graphical user interface for day-to-day 
+            interaction, review, and repository synchronization.</p>
 
-    <table>
-        <tr>
-            <th>Property</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>color</td>
-            <td>Specifies the text color</td>
-        </tr>
-        <tr>
-            <td>font-family</td>
-            <td>Specifies the font family</td>
-        </tr>
-        <tr>
-            <td>font-size</td>
-            <td>Specifies the font size</td>
-        </tr>
-        <tr>
-            <td>font-style</td>
-            <td>Specifies the font style</td>
-        </tr>
-        <tr>
-            <td>font-weight</td>
-            <td>Specifies the font weight</td>
-        </tr>
-        <tr>
-            <td>text-align</td>
-            <td>Specifies the horizontal alignment</td>
-        </tr>
-        <tr>
-            <td>text-decoration</td>
-            <td>Specifies the text decoration</td>
-        </tr>
-        <tr>
-            <td>text-transform</td>
-            <td>Specifies the text transform</td>
-        </tr>
-        <tr>
-            <td>background-color</td>
-            <td>Specifies the background color</td>
-        </tr>
-        <tr>
-            <td>background-image</td>
-            <td>Specifies the background image</td>
-        </tr>
-        <tr>
-            <td>background-repeat</td>
-            <td>Specifies how the background image is repeated</td>
-        </tr>
-        <tr>
-            <td>background-position</td>
-            <td>Specifies the position of the background image</td>
-        </tr>
-        <tr>
-            <td>background-attachment</td>
-            <td>Specifies whether the background image is fixed or scrolls with the page</td>
-        </tr>
-        <tr>
-            <td>border</td>
-            <td>Specifies the border</td>
-        </tr>
-        <tr>
-            <td>border-color</td>
-            <td>Specifies the color of the border</td>
-        </tr>
-        <tr>
-            <td>border-style</td>
-            <td>Specifies the style of the border</td>
-        </tr>
-        <tr>
-            <td>border-width</td
-    </table>
+            <h3>GitHub for Windows</h3>
+            <p>htps://windows.github.com</p>
 
+            <h3>GitHub for Mac</h3>
+            <p>htps://mac.github.com</p>
+
+            <p>For Linux and Solaris platforms, the latest release is available on
+            the official Git web site.</p>
+
+            <h3>Git for All Platforms</h3>
+            <p>htp://git-scm.com</p>
+
+            <h2>SETUP</h2>
+            <p>Configuring user information used across all local repositories</p>
+        <div>
+            <p class="command">git config --global user.name "[firstname lastname]"</p>
+        </div>
+        <div>
+            <p class="command">git config --global user.email "[valid-email]"</p>
+        </div>
+        <div>
+            <p class="command">git config --global color.ui auto</p>
+        </div>
+
+        </nav>
+        <aside class="right-sidebar">Right Sidebar</aside>
+        <footer class="footer">Footer</footer>
+    </div>
 </body>
-
-
 </html>
