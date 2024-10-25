@@ -12,6 +12,7 @@ body {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     height: 50vh;
+    column-gap: 20px;
 }
 
 .header {
