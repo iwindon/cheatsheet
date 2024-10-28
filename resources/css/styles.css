@@ -1,13 +1,10 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
-.gayathri-thin {
-    font-family: "Gayathri", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
   
 .container {
     display: grid;
@@ -19,6 +16,7 @@ body {
     grid-template-columns: 1fr 1fr;
     height: 50vh;
     column-gap: 20px;
+    flex: 1;
 }
 
 .header {
@@ -57,16 +55,22 @@ body {
     background-color: #e4e3e3;
 }
 
-.main-content {
-    grid-area: main-content;
-    background-color: #2ec4b6;
-    padding: 1rem;
-}
-
 .right-sidebar {
     grid-area: right-sidebar;
     background-color: #e4e3e3;
     padding: 1rem;
+}
+
+.command-box {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 0px; /* Space between each command */
+    margin-top: 0px; /* Space between each command */
+    margin-right: 0px;
+    font-family: monospace; /* Monospace font for command line text */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    display: inline-block; /* Ensure the box is only as wide as the text */
 }
 
 .command {
